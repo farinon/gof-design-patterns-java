@@ -1,5 +1,5 @@
 package designpatterns.abstractfactory;
 
-public interface Veiculo {
+public interface Vehicle {
 	void method();
 }

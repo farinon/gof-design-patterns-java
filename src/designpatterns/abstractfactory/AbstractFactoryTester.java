@@ -48,18 +48,18 @@ public class AbstractFactoryTester  extends AbstractTester implements TesterInte
 		showTitle(title);
 		AbstractFactory offRoadFactory = FactoryProducer.getFactory("OffRoad");
 		
-		Veiculo carro1 = offRoadFactory.getVeiculo("X");
+		Vehicle carro1 = offRoadFactory.getVehicle("X");
 		carro1.method();
 		
-		Veiculo carro2 = offRoadFactory.getVeiculo("Y");
+		Vehicle carro2 = offRoadFactory.getVehicle("Y");
 		carro2.method();
 		
 		AbstractFactory streetFactory = FactoryProducer.getFactory("Street");
 		
-		Veiculo carro3 = streetFactory.getVeiculo("X");
+		Vehicle carro3 = streetFactory.getVehicle("X");
 		carro3.method();
 		
-		Veiculo carro4 = streetFactory.getVeiculo("Y");
+		Vehicle carro4 = streetFactory.getVehicle("Y");
 		carro4.method();
 	}
 

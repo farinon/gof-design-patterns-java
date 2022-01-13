@@ -1,6 +1,6 @@
 package designpatterns.abstractfactory;
 
-public class YOffRoad implements Veiculo {
+public class YOffRoad implements Vehicle {
 
 	@Override
 	public void method() {

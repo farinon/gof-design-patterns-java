@@ -2,10 +2,10 @@ package designpatterns.abstractfactory;
 
 public class OffRoadFactory extends AbstractFactory {
 	@Override
-	public Veiculo getVeiculo(String modeloVeiculo) {
-		if (modeloVeiculo.equalsIgnoreCase("X")) {
+	public Vehicle getVehicle(String vehicleModel) {
+		if (vehicleModel.equalsIgnoreCase("X")) {
 			return new XOffRoad();
-		} else if (modeloVeiculo.equalsIgnoreCase("Y")) {
+		} else if (vehicleModel.equalsIgnoreCase("Y")) {
 			return new YOffRoad();
 		}
 		return null;

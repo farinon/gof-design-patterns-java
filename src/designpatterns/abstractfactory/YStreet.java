@@ -1,6 +1,6 @@
 package designpatterns.abstractfactory;
 
-public class YStreet implements Veiculo {
+public class YStreet implements Vehicle {
 
 	@Override
 	public void method() {
