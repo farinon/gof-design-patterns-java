@@ -1,13 +1,13 @@
 package designpatterns.bridge.implementation;
 
-public class Cargas implements Transporte {
+public class Loads implements Transport {
     @Override
-    public void transportar() {
+    public void transport() {
         System.out.println("Veículo Transportando Cargas");
     }
 
     @Override
-    public void descricaoTransporte() {
+    public void transportDescription() {
         System.out.println("Veículo que Transporta Cargas");
     }
 }

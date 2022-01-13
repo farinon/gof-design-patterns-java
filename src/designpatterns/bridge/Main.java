@@ -1,22 +1,22 @@
 package designpatterns.bridge;
 
-import designpatterns.bridge.abstraction.Caminhao;
-import designpatterns.bridge.abstraction.Onibus;
-import designpatterns.bridge.abstraction.Veiculo;
-import designpatterns.bridge.implementation.Cargas;
-import designpatterns.bridge.implementation.Pessoas;
+import designpatterns.bridge.abstraction.Truck;
+import designpatterns.bridge.abstraction.Bus;
+import designpatterns.bridge.abstraction.Vehicle;
+import designpatterns.bridge.implementation.Loads;
+import designpatterns.bridge.implementation.Peaple;
 
 public class Main {
     public static void main(String[] args) {
         System.out.println(" ---------------------------------------- ");
 
-        Veiculo caminhao = new Caminhao("Scania", new Cargas());
-        caminhao.realizarAtividade();
+        Vehicle caminhao = new Truck("Scania", new Loads());
+        caminhao.performActivity();
 
         System.out.println(" ---------------------------------------- ");
 
-        Veiculo onibus = new Onibus("Mercedes", new Pessoas());
-        onibus.realizarAtividade();
+        Vehicle onibus = new Bus("Mercedes", new Peaple());
+        onibus.performActivity();
 
         System.out.println(" ---------------------------------------- ");
     }
