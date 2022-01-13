@@ -1,6 +1,10 @@
 package designpatterns.visitor;
 
 import app.TesterInterface;
+import designpatterns.visitor.exemple.ArvoreBinaria;
+import designpatterns.visitor.exemple.ExibirInOrderVisitor;
+import designpatterns.visitor.exemple.ExibirPostOrderVisitor;
+import designpatterns.visitor.exemple.ExibirPreOrdemVisitor;
 import app.AbstractTester;
 
 public class VisitorTester  extends AbstractTester implements TesterInterface{
@@ -45,7 +49,25 @@ public class VisitorTester  extends AbstractTester implements TesterInterface{
 	   }
 	@Override
 	public void start() {
-		showTitle(title);	
+		showTitle(title);
+		ArvoreBinaria arvore = new ArvoreBinaria(7);
+
+		arvore.inserir(45);
+		arvore.inserir(30);
+		arvore.inserir(15);
+		arvore.inserir(6);
+		arvore.inserir(3);
+		arvore.inserir(60);
+
+		System.out.println("ARVORE BINARIA EM ORDEM:");
+		arvore.aceitarVisitante(new ExibirInOrderVisitor());
+		
+		System.out.println("ARVORE BINARIA EM PRE ORDEM:");
+		arvore.aceitarVisitante(new ExibirPreOrdemVisitor());
+		
+		System.out.println("ARVORE BINARIA EM POS ORDEM:");
+		arvore.aceitarVisitante(new ExibirPostOrderVisitor());
+
 	}
 
 }
