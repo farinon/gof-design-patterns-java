@@ -50,13 +50,13 @@ public class PrototypeTester  extends AbstractTester implements TesterInterface{
 		showTitle(title);
 		PalioPrototype prototipoPalio = new PalioPrototype();
 		 
-	    CarroPrototype palioNovo = prototipoPalio.clonar();
-	    palioNovo.setValorCompra(27900.0);
-	    CarroPrototype palioUsado = prototipoPalio.clonar();
-	    palioUsado.setValorCompra(21000.0);
+	    CarPrototype palioNovo = prototipoPalio.clone();
+	    palioNovo.setPurchasePrice(27900.0);
+	    CarPrototype palioUsado = prototipoPalio.clone();
+	    palioUsado.setPurchasePrice(21000.0);
 	 
-	    System.out.println(palioNovo.exibirInfo());
-	    System.out.println(palioUsado.exibirInfo());
+	    System.out.println(palioNovo.showInfo());
+	    System.out.println(palioUsado.showInfo());
 	}
 
 }

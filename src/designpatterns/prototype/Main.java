@@ -3,15 +3,15 @@ package designpatterns.prototype;
 public class Main {
 
 	public static void main(String[] args) {
-	    PalioPrototype prototipoPalio = new PalioPrototype();
+	    PalioPrototype palioPrototype = new PalioPrototype();
 	 
-	    CarroPrototype palioNovo = prototipoPalio.clonar();
-	    palioNovo.setValorCompra(27900.0);
-	    CarroPrototype palioUsado = prototipoPalio.clonar();
-	    palioUsado.setValorCompra(21000.0);
+	    CarPrototype newPalio = palioPrototype.clone();
+	    newPalio.setPurchasePrice(27900.0);
+	    CarPrototype palioUsado = palioPrototype.clone();
+	    palioUsado.setPurchasePrice(21000.0);
 	 
-	    System.out.println(palioNovo.exibirInfo());
-	    System.out.println(palioUsado.exibirInfo());
+	    System.out.println(newPalio.showInfo());
+	    System.out.println(palioUsado.showInfo());
 	}
 
 }

@@ -1,23 +1,23 @@
 package designpatterns.prototype;
 
-public class FiestaPrototype extends CarroPrototype {
+public class FiestaPrototype extends CarPrototype {
 	 
     protected FiestaPrototype(FiestaPrototype fiestaPrototype) {
-        this.valorCompra = fiestaPrototype.getValorCompra();
+        this.purchaseValue = fiestaPrototype.getPurchaseValue();
     }
  
     public FiestaPrototype() {
-        valorCompra = 0.0;
+        purchaseValue = 0.0;
     }
  
     @Override
-    public String exibirInfo() {
+    public String showInfo() {
         return "Modelo: Fiesta\nMontadora: Ford\n" + "Valor: R$"
-                + getValorCompra();
+                + getPurchaseValue();
     }
  
     @Override
-    public CarroPrototype clonar() {
+    public CarPrototype clone() {
         return new FiestaPrototype(this);
     }
  

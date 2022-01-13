@@ -1,23 +1,23 @@
 package designpatterns.prototype;
 
-public class PalioPrototype extends CarroPrototype {
+public class PalioPrototype extends CarPrototype {
 	 
     protected PalioPrototype(PalioPrototype palioPrototype) {
-        this.valorCompra = palioPrototype.getValorCompra();
+        this.purchaseValue = palioPrototype.getPurchaseValue();
     }
  
     public PalioPrototype() {
-        valorCompra = 0.0;
+        purchaseValue = 0.0;
     }
  
     @Override
-    public String exibirInfo() {
+    public String showInfo() {
         return "Modelo: Palio\nMontadora: Fiat\n" + "Valor: R$"
-                + getValorCompra();
+                + getPurchaseValue();
     }
  
     @Override
-    public CarroPrototype clonar() {
+    public CarPrototype clone() {
         return new PalioPrototype(this);
     }
  
