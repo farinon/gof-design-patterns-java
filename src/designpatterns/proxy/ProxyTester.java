@@ -55,7 +55,18 @@ public class ProxyTester  extends AbstractTester implements TesterInterface{
 	   }
 	@Override
 	public void start() {
-		showTitle(title);	
+		showTitle(title);
+		Universidade universidade = new UniversidadeProxy("errado");
+        System.out.println("Login Incorreto");
+        System.out.println(universidade.getNomeInstituicao());
+        System.out.println(universidade.getNomeCurso());
+        System.out.println("");
+        System.out.println("----------------------------");
+        System.out.println("");
+        universidade = new UniversidadeProxy("correto");
+        System.out.println("Login válido");
+        System.out.println(universidade.getNomeInstituicao());
+        System.out.println(universidade.getNomeCurso());
 	}
 
 }
