@@ -1,7 +1,7 @@
 package designpatterns.state;
 
 
-public class TVRemoteBasic {
+public class TvRemoteBasic {
 private String state="";
 	
 	public void setState(String state){
@@ -16,8 +16,8 @@ private String state="";
 		}
 	}
 
-	public void TVRemoteBasic() {                                                  
-		TVRemoteBasic remote = new TVRemoteBasic();
+	public void TvRemoteBasic() {                                                  
+		TvRemoteBasic remote = new TvRemoteBasic();
 		
 		remote.setState("ON");
 		remote.doAction();

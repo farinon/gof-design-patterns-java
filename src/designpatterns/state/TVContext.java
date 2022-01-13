@@ -1,6 +1,6 @@
 package designpatterns.state;
 
-public class TVContext implements State {
+public class TvContext implements State {
 
 	private State tvState;
 

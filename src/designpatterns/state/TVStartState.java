@@ -1,7 +1,7 @@
 package designpatterns.state;
 
 
-public class TVStartState implements State {
+public class TvStartState implements State {
 
 	@Override
 	public void doAction() {

@@ -13,20 +13,8 @@ public class StateTester  extends AbstractTester implements TesterInterface{
 				+ " um objeto para cada estado possível do objeto que o chama.\n"
 				+ "Permite que um objeto altere seu comportamento de acordo com o estado interno que se encontra\n"
 				+ " em um momento dado.\n";
-		
 		System.out.println(content);
-		System.out.println("");
-		showMenu(title);
-		TVContext context = new TVContext();
-		State tvStartState = new TVStartState();
-		State tvStopState = new TVStopState();
 		
-		context.setState(tvStartState);
-		context.doAction();
-		
-		
-		context.setState(tvStopState);
-		context.doAction();
 	}
 
 	public String getTitle() {
@@ -54,7 +42,20 @@ public class StateTester  extends AbstractTester implements TesterInterface{
 	   }
 	@Override
 	public void start() {
-		showTitle(title);	
+		showTitle(title);
+		
+		System.out.println("");
+		showMenu(title);
+		TvContext context = new TvContext();
+		State tvStartState = new TvStartState();
+		State tvStopState = new TvStopState();
+		
+		context.setState(tvStartState);
+		context.doAction();
+		
+		
+		context.setState(tvStopState);
+		context.doAction();
 	}
 
 }
