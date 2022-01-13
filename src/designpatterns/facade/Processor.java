@@ -1,8 +1,8 @@
 package designpatterns.facade;
 
-public class Processador {
+public class Processor {
 
-	public void ProcessaDado() {
+	public void processData() {
 		System.out.println("Dado processado");
 
 	}

@@ -1,8 +1,8 @@
 package designpatterns.facade;
 
-public class Memoria {
+public class Memory {
 	
-	public void CarregaDado() {
+	public void loadData() {
 		System.out.println("Dado carregado");
 
 	}
