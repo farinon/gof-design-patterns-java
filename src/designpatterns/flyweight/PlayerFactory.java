@@ -3,18 +3,18 @@ import java.util.HashMap;
 
 /*
 Classe para retornar o jogador (Player)
-Se jÃ¡ existe retorna uma referÃªncia do objeto que jÃ¡ existe
-Caso contrÃ¡rio cria uma
+Se já existe retorna uma referência do objeto que já existe
+Caso contrário cria uma
 */
 
 class PlayerFactory {
-    /* HashMap para armazenar instÃ¢ncias de player (nesse caso CT ou TR) */
+    /* HashMap para armazenar instâncias de player (nesse caso CT ou TR) */
     private static HashMap <String, Player> hm = new HashMap<String, Player>();
 
     public static Player getPlayer(String type) {
         Player player = null;
   
-        /* Se um TR ou CT jÃ¡ foi criado somente retorna sua referÃªncia*/
+        /* Se um TR ou CT já foi criado somente retorna sua referência*/
         if (hm.containsKey(type)) {
             player = hm.get(type);
         } else {

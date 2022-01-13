@@ -1,7 +1,7 @@
 package designpatterns.flyweight;
 /*
 Interface do jogador
-Tanto CT como TR precisa ter uma miss√£o e uma arma
+Tanto CT como TR precisa ter uma miss„o e uma arma
 */
 
 interface Player

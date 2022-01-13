@@ -1,7 +1,7 @@
 package designpatterns.flyweight;
 import java.util.Random;
 
-public class CounterStrike {
+public class Main {
     private static String[] playerType = {"Terrorist", "CounterTerrorist"};
     private static String[] weapons = {"AK-47", "AWP", "Knife", "Desert Eagle"};
 
