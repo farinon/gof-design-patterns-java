@@ -2,24 +2,24 @@ package designpatterns.mediator.controlevoo;
 public class Main {
 	public static void main(String[] args) {
 		
-		IAtc atcMediator = new Atc();
+		atcInterface atcMediator = new Atc();
 		
-		Pista pista = new Pista(atcMediator);
+		Track track = new Track(atcMediator);
 		
-		Voo voo1 = new Voo(atcMediator);
+		Flight voo1 = new Flight(atcMediator);
 		//Voo voo2 = new Voo(atcMediator);
 
 		
-		atcMediator.registrarVoo(voo1);
-		atcMediator.registrarPista(pista);
+		atcMediator.registerFlight(voo1);
+		atcMediator.registerTrack(track);
 		
-		voo1.prontoParaPousar();
+		voo1.readyToLand();
 		//pista.pouso();
 		//voo1.pouso();
 		
 		//voo2.pouso();
 		
-		voo1.estacionado();
+		voo1.parked();
 		
 		//voo2.pouso();
 		

@@ -1,5 +1,5 @@
 package designpatterns.mediator.controlevoo;
 
-public interface Comando {
-	void pouso();
+public interface Command {
+	void landing();
 }

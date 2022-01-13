@@ -1,24 +1,24 @@
 package designpatterns.mediator.controlevoo;
-public class Atc implements IAtc {
-	public Boolean disponivel;
+public class Atc implements atcInterface {
+	public Boolean avaible;
 	
 	@Override
-	public void registrarVoo(Voo voo) {
+	public void registerFlight(Flight flight) {
 	}
 	
 	@Override
-	public void registrarPista(Pista pista) {
+	public void registerTrack(Track track) {
 	}
 	
 	@Override
-	public void setDisponibilidade(Boolean status) {
-		this.disponivel = status;
+	public void setAvailability(Boolean status) {
+		this.avaible = status;
 	}
 	
 	@Override
-	public Boolean estaDisponivel() {
+	public Boolean isAvaible() {
 
-		return disponivel;
+		return avaible;
 	}
 	
 	}
