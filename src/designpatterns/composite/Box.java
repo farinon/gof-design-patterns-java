@@ -8,12 +8,12 @@ package designpatterns.composite;
 
 import java.util.List;
 
-public class Caixa implements Item {
+public class Box implements Item {
 	// Lista para armazenar referências aos subelementos. 
 	// Armazena tanto Folha como Contêiner, por isso deve ser declarado com um tipo de interface Componente.
 	private List<Item> itens;
 	
-	public Caixa(List<Item> itens) {
+	public Box(List<Item> itens) {
 		this.itens = itens;
 	}
 	
@@ -29,14 +29,14 @@ public class Caixa implements Item {
 	// Como os filhos do Contêiner passam essas chamadas para seus próprios filhos e assim em diante, 
 	// toda a árvore de objetos é percorrida como resultado.
 	@Override
-	public double calcularPrecoFinal() {
-		double precoFinal = 0;
+	public double calculateFinalPrice() {
+		double finalPrice = 0;
 		
 		for (Item item : itens) {
-			precoFinal += item.calcularPrecoFinal();
+			finalPrice += item.calculateFinalPrice();
 		}
 		
-		return precoFinal;
+		return finalPrice;
 	}
 }
 

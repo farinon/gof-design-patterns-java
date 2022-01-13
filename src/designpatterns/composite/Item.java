@@ -6,6 +6,6 @@
 package designpatterns.composite;
 
 public interface Item {
-	public double calcularPrecoFinal();
+	public double calculateFinalPrice();
 }
 
