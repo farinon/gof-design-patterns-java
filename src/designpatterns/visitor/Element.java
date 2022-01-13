@@ -1,6 +1,6 @@
 package designpatterns.visitor;
 
-public class Elemento {
+public class Element {
 	
 	public void accept (Visitor visitor) {
 		

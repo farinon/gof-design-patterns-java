@@ -15,23 +15,23 @@ public class No {
 		return String.valueOf(chave);
 	}
 
-	public int getChave() {
+	public int getKey() {
 		return chave;
 	}
 
-	public No getEsquerdo() {
+	public No getLeft() {
 		return esquerdo;
 	}
 
-	public void setEsquerdo(No esquerdo) {
+	public void setLeft(No esquerdo) {
 		this.esquerdo = esquerdo;
 	}
 
-	public No getDireito() {
+	public No getRight() {
 		return direito;
 	}
 
-	public void setDireito(No direito) {
+	public void setRight(No direito) {
 		this.direito = direito;
 	}
 

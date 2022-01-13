@@ -1,6 +1,6 @@
 package designpatterns.visitor;
 
-public class ElementoConcreto extends Elemento {
+public class ConcreteElement extends Element {
 	
 	public void accept (Visitor visitor) {
 		visitor.visit(this);

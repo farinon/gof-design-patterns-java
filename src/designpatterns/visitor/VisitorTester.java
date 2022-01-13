@@ -1,10 +1,10 @@
 package designpatterns.visitor;
 
 import app.TesterInterface;
-import designpatterns.visitor.exemple.ArvoreBinaria;
-import designpatterns.visitor.exemple.ExibirInOrderVisitor;
-import designpatterns.visitor.exemple.ExibirPostOrderVisitor;
-import designpatterns.visitor.exemple.ExibirPreOrdemVisitor;
+import designpatterns.visitor.exemple.BinaryTree;
+import designpatterns.visitor.exemple.ShowOrderedVisitor;
+import designpatterns.visitor.exemple.ShowPostOrderVisitor;
+import designpatterns.visitor.exemple.ShowPreOrderVisitor;
 import app.AbstractTester;
 
 public class VisitorTester  extends AbstractTester implements TesterInterface{
@@ -50,23 +50,23 @@ public class VisitorTester  extends AbstractTester implements TesterInterface{
 	@Override
 	public void start() {
 		showTitle(title);
-		ArvoreBinaria arvore = new ArvoreBinaria(7);
+		BinaryTree tree = new BinaryTree(7);
 
-		arvore.inserir(45);
-		arvore.inserir(30);
-		arvore.inserir(15);
-		arvore.inserir(6);
-		arvore.inserir(3);
-		arvore.inserir(60);
+		tree.insert(45);
+		tree.insert(30);
+		tree.insert(15);
+		tree.insert(6);
+		tree.insert(3);
+		tree.insert(60);
 
 		System.out.println("ARVORE BINARIA EM ORDEM:");
-		arvore.aceitarVisitante(new ExibirInOrderVisitor());
+		tree.acceptVisitor(new ShowOrderedVisitor());
 		
 		System.out.println("ARVORE BINARIA EM PRE ORDEM:");
-		arvore.aceitarVisitante(new ExibirPreOrdemVisitor());
+		tree.acceptVisitor(new ShowPreOrderVisitor());
 		
 		System.out.println("ARVORE BINARIA EM POS ORDEM:");
-		arvore.aceitarVisitante(new ExibirPostOrderVisitor());
+		tree.acceptVisitor(new ShowPostOrderVisitor());
 
 	}
 
