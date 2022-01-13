@@ -17,6 +17,16 @@ public class StateTester  extends AbstractTester implements TesterInterface{
 		System.out.println(content);
 		System.out.println("");
 		showMenu(title);
+		TVContext context = new TVContext();
+		State tvStartState = new TVStartState();
+		State tvStopState = new TVStopState();
+		
+		context.setState(tvStartState);
+		context.doAction();
+		
+		
+		context.setState(tvStopState);
+		context.doAction();
 	}
 
 	public String getTitle() {
