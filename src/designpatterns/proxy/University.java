@@ -6,11 +6,13 @@ public class University {
     private String courseName;
 
     public String getInstitutionName() {
-        return institutionName = "IFRS - RS";
+    	institutionName = "IFRS - RS";
+        return institutionName;
     }
 
     public String getCourseName() {
-        return courseName =  "ADS";
+    	courseName =  "ADS";
+        return courseName;
     }
 
 }
