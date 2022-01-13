@@ -6,7 +6,7 @@ import designpatterns.builder.cars.Car;
 import designpatterns.builder.cars.Manual;
 import designpatterns.builder.director.Director;
 
-public class Demo {
+public class Main {
 
     public static void main(String[] args) {
         Director director = new Director();
