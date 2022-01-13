@@ -4,16 +4,18 @@ import app.TesterInterface;
 import app.AbstractTester;
 
 public class MementoTester  extends AbstractTester implements TesterInterface{
-	private String title = "Abstract Factory";
+	private String title = "Memento";
 	@Override
 	public void showAbstract() {
 		showTitle(title);
-		var content = "  Este padrão permite a criação de famílias de objetos relacionados ou dependentes \n"
-					+ "por meio de uma única interface e sem que a classe concreta seja especificada. Uma \n"
-					+ "fábrica é a localização de uma classe concreta no código em que objetos são cons-  \n"
-					+ "truídos .\n"
-					+ "O objetivo em empregar o padrão é isolar a criação de objetos de seu uso e criar   \n"
-					+ "famílias de objetos relacionados sem ter que depender de suas classes concretas.   \n";
+		var content = "  Padrão comportamental que permite armazenar o estado interno de um objeto em um \n"
+					+ "determinando momento, para que seja possível retorná-lo a este estado, sem que \n"
+					+ "isso cause problemas com o encapsulamento.\n"
+					+ " Ele funciona de maneira que uma classe é responsável por salvar o estado do objeto\n"
+					+ " desejado enquanto que uma outra classe fica responsável por armazenar todas essas \n"
+					+ "copias (mementos).\n"
+					+ " O padrão Memento é implementado se utilizando de três elementos: Originador, Arma-\n"
+					+ "zenador e o Memento.\n";
 		
 		System.out.println(content);
 		System.out.println("");

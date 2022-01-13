@@ -4,16 +4,17 @@ import app.TesterInterface;
 import app.AbstractTester;
 
 public class ChainOfResponsibilityTester  extends AbstractTester implements TesterInterface{
-	private String title = "Abstract Factory";
+	private String title = "Chain Of Responsibility";
 	@Override
 	public void showAbstract() {
 		showTitle(title);
-		var content = "  Este padrão permite a criação de famílias de objetos relacionados ou dependentes \n"
-					+ "por meio de uma única interface e sem que a classe concreta seja especificada. Uma \n"
-					+ "fábrica é a localização de uma classe concreta no código em que objetos são cons-  \n"
-					+ "truídos .\n"
-					+ "O objetivo em empregar o padrão é isolar a criação de objetos de seu uso e criar   \n"
-					+ "famílias de objetos relacionados sem ter que depender de suas classes concretas.   \n";
+		var content = "  Em Orientação a Objetos, Chain of Responsibility é um padrão GOF cuja principal função \n"
+					+ "é evitar a dependência entre um objeto receptor e um objeto solicitante. Consiste em uma \n"
+					+ "série de objetos receptores e de objetos de solicitação, onde cada objetos de solicitação \n"
+					+ "possui uma lógica interna que separa quais são tipos de objetos receptores que podem ser \n"
+					+ "manipulados. O restante é passado para o próximo objetos de solicitação da cadeia.\n"
+					+ " Devido a isso, é um padrão que utiliza a ideia de baixo acoplamento por permitir que ou-\n"
+					+ "tros objetos da cadeia tenham a oportunidade de tratar uma solicitação.\n";
 		
 		System.out.println(content);
 		System.out.println("");

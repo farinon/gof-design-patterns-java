@@ -4,16 +4,15 @@ import app.TesterInterface;
 import app.AbstractTester;
 
 public class MediatorTester  extends AbstractTester implements TesterInterface{
-	private String title = "Abstract Factory";
+	private String title = "Meditor";
 	@Override
 	public void showAbstract() {
 		showTitle(title);
-		var content = "  Este padrão permite a criação de famílias de objetos relacionados ou dependentes \n"
-					+ "por meio de uma única interface e sem que a classe concreta seja especificada. Uma \n"
-					+ "fábrica é a localização de uma classe concreta no código em que objetos são cons-  \n"
-					+ "truídos .\n"
-					+ "O objetivo em empregar o padrão é isolar a criação de objetos de seu uso e criar   \n"
-					+ "famílias de objetos relacionados sem ter que depender de suas classes concretas.   \n";
+		var content = " Este padrão é usado frequentemente quando deseja-se encapsular como os objetos\n"
+					+ " interagem, ou seja, a comunicação entre os objetos é estabelecida através do \n"
+					+ "Mediator. Este padrão é considerado um padrão comportamental, pois o padrão pode\n"
+					+ " alterar o comportamento da aplicação (programa).O Mediator promove o fraco aco-\n"
+					+ "plamento ao evitar que objetos se referiram uns aos outros explicitamente.\n";
 		
 		System.out.println(content);
 		System.out.println("");

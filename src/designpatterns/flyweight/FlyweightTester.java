@@ -4,7 +4,7 @@ import app.TesterInterface;
 import app.AbstractTester;
 
 public class FlyweightTester  extends AbstractTester implements TesterInterface{
-	private String title = "Abstract Factory";
+	private String title = "Flyweight";
 	@Override
 	public void showAbstract() {
 		showTitle(title);

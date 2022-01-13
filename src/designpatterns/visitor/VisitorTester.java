@@ -4,16 +4,16 @@ import app.TesterInterface;
 import app.AbstractTester;
 
 public class VisitorTester  extends AbstractTester implements TesterInterface{
-	private String title = "Abstract Factory";
+	private String title = "Visitor";
 	@Override
 	public void showAbstract() {
 		showTitle(title);
-		var content = "  Este padrão permite a criação de famílias de objetos relacionados ou dependentes \n"
-					+ "por meio de uma única interface e sem que a classe concreta seja especificada. Uma \n"
-					+ "fábrica é a localização de uma classe concreta no código em que objetos são cons-  \n"
-					+ "truídos .\n"
-					+ "O objetivo em empregar o padrão é isolar a criação de objetos de seu uso e criar   \n"
-					+ "famílias de objetos relacionados sem ter que depender de suas classes concretas.   \n";
+		var content = "  Padrão de projeto comportamental que representa uma operação a ser realizada sobre \n"
+					+ "elementos da estrutura de um objeto. O Visitor permite que se crie uma nova operação \n"
+					+ "sem que se mude a classe dos elementos sobre as quais ela opera. É uma maneira de \n"
+					+ "separar um algoritmo da estrutura de um objeto. Um resultado prático é a habilidade \n"
+					+ "de adicionar novas funcionalidades a estruturas de um objeto pré-existente sem a neces-\n"
+					+ "sidade de modificá-las.\n";
 		
 		System.out.println(content);
 		System.out.println("");

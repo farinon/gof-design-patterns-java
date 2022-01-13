@@ -4,16 +4,20 @@ import app.TesterInterface;
 import app.AbstractTester;
 
 public class FacadeTester  extends AbstractTester implements TesterInterface{
-	private String title = "Abstract Factory";
+	private String title = "Facade";
 	@Override
 	public void showAbstract() {
 		showTitle(title);
-		var content = "  Este padrão permite a criação de famílias de objetos relacionados ou dependentes \n"
-					+ "por meio de uma única interface e sem que a classe concreta seja especificada. Uma \n"
-					+ "fábrica é a localização de uma classe concreta no código em que objetos são cons-  \n"
-					+ "truídos .\n"
-					+ "O objetivo em empregar o padrão é isolar a criação de objetos de seu uso e criar   \n"
-					+ "famílias de objetos relacionados sem ter que depender de suas classes concretas.   \n";
+		var content = "  Este nome é uma analogia para uma fachada arquitetural. Um Facade é um objeto que \n"
+					+ "provê uma interface simplificada para um corpo de código maior, como por exemplo, \n"
+					+ "uma biblioteca de classes.\n"
+					+ " O Padrão Facade é do tipo estrutural . É usado quando um sistema é muito complexo \n"
+					+ "ou difícil de entender, já que possui um grande número de classes independentes ou \n"
+					+ "se trechos de código fonte estão indisponíveis. Este padrão esconde as complexidades \n"
+					+ "de um sistema maior e provê uma interface simplificada ao cliente. Tipicamente envol-\n"
+					+ "ve uma única classe responsável por englobar uma série de membros requeridos pelo \n"
+					+ "cliente. Estes membros acessam o sistema em nome do Facade e escondem os detalhes de\n"
+					+ " implementação.\n";
 		
 		System.out.println(content);
 		System.out.println("");
