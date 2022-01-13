@@ -56,6 +56,8 @@ public class StateTester  extends AbstractTester implements TesterInterface{
 		
 		context.setState(tvStopState);
 		context.doAction();
+		showMenu(title);
+
 	}
 
 }

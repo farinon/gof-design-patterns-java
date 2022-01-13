@@ -67,6 +67,8 @@ public class ProxyTester  extends AbstractTester implements TesterInterface{
         System.out.println("Login válido");
         System.out.println(university.getInstitutionName());
         System.out.println(university.getCourseName());
+		showMenu(title);
+
 	}
 
 }

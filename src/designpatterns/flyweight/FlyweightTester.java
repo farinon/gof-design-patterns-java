@@ -47,6 +47,8 @@ public class FlyweightTester  extends AbstractTester implements TesterInterface{
 	public void start() {
 		showTitle(title);
 		Main.main(null);
+		showMenu(title);
+
 	}
 
 }

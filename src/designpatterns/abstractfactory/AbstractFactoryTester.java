@@ -61,6 +61,7 @@ public class AbstractFactoryTester  extends AbstractTester implements TesterInte
 		
 		Vehicle carro4 = streetFactory.getVehicle("Y");
 		carro4.method();
+		showMenu(title);
 	}
 
 }

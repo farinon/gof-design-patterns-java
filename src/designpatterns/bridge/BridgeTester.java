@@ -68,6 +68,8 @@ public class BridgeTester  extends AbstractTester implements TesterInterface{
         onibus.performActivity();
 
         System.out.println(" ---------------------------------------- ");
+		showMenu(title);
+
 	}
 
 }

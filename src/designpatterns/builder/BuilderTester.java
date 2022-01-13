@@ -73,6 +73,7 @@ public class BuilderTester  extends AbstractTester implements TesterInterface{
         director.constructSportsCar(manualBuilder);
         Manual carManual = manualBuilder.getResult();
         System.out.println("\nCar manual built:\n" + carManual.print());
+		showMenu(title);
 	}
 
 }

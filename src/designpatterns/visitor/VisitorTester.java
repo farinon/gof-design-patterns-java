@@ -67,6 +67,9 @@ public class VisitorTester  extends AbstractTester implements TesterInterface{
 		
 		System.out.println("ARVORE BINARIA EM POS ORDEM:");
 		tree.acceptVisitor(new ShowPostOrderVisitor());
+		
+		showMenu(title);
+
 
 	}
 

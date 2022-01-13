@@ -58,6 +58,8 @@ public class ChainOfResponsibilityTester  extends AbstractTester implements Test
 		
 		String response = logInfoHandler.handle("error");
 		System.out.println(response);
+		showMenu(title);
+
 	}
 
 }

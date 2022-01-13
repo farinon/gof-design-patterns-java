@@ -64,6 +64,8 @@ public class MediatorTester  extends AbstractTester implements TesterInterface{
         
         user1.send("Hello brian", "2");
         user2.send("Hey buddy", "1");
+		showMenu(title);
+
 	}
 
 }

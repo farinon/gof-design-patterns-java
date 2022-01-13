@@ -55,6 +55,7 @@ public class FacadeTester  extends AbstractTester implements TesterInterface{
         System.out.println("\n\nOBS: O funcionamento do menu inicial deste sistema \n"
         				+ "também se utiliza do pattern facade durante o carregamen-\n"
         				+ "to dos testers, por exemplo.");
+		showMenu(title);
 	}
 
 }

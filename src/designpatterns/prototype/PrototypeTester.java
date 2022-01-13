@@ -57,6 +57,8 @@ public class PrototypeTester  extends AbstractTester implements TesterInterface{
 	 
 	    System.out.println(palioNovo.showInfo());
 	    System.out.println(palioUsado.showInfo());
+		showMenu(title);
+
 	}
 
 }

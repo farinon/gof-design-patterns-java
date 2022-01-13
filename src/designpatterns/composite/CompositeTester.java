@@ -75,6 +75,8 @@ public class CompositeTester  extends AbstractTester implements TesterInterface{
 		masterBox.addItem(tootlBox);
 		
 		System.out.println("VALOR TOTAL = " + masterBox.calculateFinalPrice());
+		showMenu(title);
+
 	}
 
 }
