@@ -46,7 +46,18 @@ public class ChainOfResponsibilityTester  extends AbstractTester implements Test
 	   }
 	@Override
 	public void start() {
-		showTitle(title);	
+		showTitle(title);
+		//Instancio os Handlers
+		LogInfoHandler logInfoHandler = new LogInfoHandler();
+		LogWarningHandler logWarningHandler = new LogWarningHandler();
+		LogErrorHandler logErrorHandler = new LogErrorHandler();
+		
+		logInfoHandler.next(logWarningHandler);
+		logWarningHandler.next(logErrorHandler);
+		
+		
+		String response = logInfoHandler.handle("error");
+		System.out.println(response);
 	}
 
 }
