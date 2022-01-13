@@ -7,3 +7,5 @@ Cada design patterm está em uma package separado no projeto com seu próprio Ma
 Foram criadas ainda classes no estilo NomeDoPatternTeste.java dentro de cada package que são acessadas pela fachada do programa
 principal. Esses NomeDoPatternTeste.java possuem seu prório menu com opções referente ao pattern em questão, com opções para
 exibir um resumo sobre o patterm, iniciar um teste  ou voltar ao menu principal.
+
+5220205 - Tiago da Costa Farinon
