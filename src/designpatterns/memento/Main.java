@@ -3,28 +3,28 @@ package designpatterns.memento;
 public class Main {
 	public static void main(String[] args) {
 		
-		Originator originador = new Originator();
-	    History armazenador = new History();
+		Originator originator = new Originator();
+	    History storer = new History();
 	    
 	    
-	    originador.setState("State #1");
+	    originator.setState("State #1");
 	    
 	    
-	    originador.setState("State #2");
-	    armazenador.saveState(originador.generateMemento());
+	    originator.setState("State #2");
+	    storer.saveState(originator.generateMemento());
 	    
 	    
-	    originador.setState("State #3");
-	    armazenador.saveState(originador.generateMemento());
+	    originator.setState("State #3");
+	    storer.saveState(originator.generateMemento());
 	    
 	    
-	    originador.setState("State #4");
-	    System.out.println("Current State: " + originador.getState());		
+	    originator.setState("State #4");
+	    System.out.println("Current State: " + originator.getState());		
 	    
-	    originador.setStateFromMemento(armazenador.getState(0));
-	    System.out.println("First saved State ----- " + originador.getState());
+	    originator.setStateFromMemento(storer.getState(0));
+	    System.out.println("First saved State ----- " + originator.getState());
 	    
-	    originador.setStateFromMemento(armazenador.getState(1));
-	    System.out.println("Second saved State ----- " + originador.getState());
+	    originator.setStateFromMemento(storer.getState(1));
+	    System.out.println("Second saved State ----- " + originator.getState());
 	}
 }
