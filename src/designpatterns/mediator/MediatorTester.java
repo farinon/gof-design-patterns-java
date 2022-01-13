@@ -1,6 +1,10 @@
 package designpatterns.mediator;
 
 import app.TesterInterface;
+import designpatterns.mediator.chat.ChatRoom;
+import designpatterns.mediator.chat.ChatUser;
+import designpatterns.mediator.chat.IChatRoom;
+import designpatterns.mediator.chat.User;
 import app.AbstractTester;
 
 public class MediatorTester  extends AbstractTester implements TesterInterface{
@@ -44,7 +48,22 @@ public class MediatorTester  extends AbstractTester implements TesterInterface{
 	   }
 	@Override
 	public void start() {
-		showTitle(title);	
+		showTitle(title);
+		IChatRoom chatroom = new ChatRoom();
+        
+        User user1 = new ChatUser(chatroom,"1", "Maria");
+        User user2 = new ChatUser(chatroom,"2", "José");
+        User user3 = new ChatUser(chatroom,"3", "João");
+        User user4 = new ChatUser(chatroom,"4", "Ana");
+         
+        chatroom.addUser(user1);
+        chatroom.addUser(user2);
+        chatroom.addUser(user3);
+        chatroom.addUser(user4);
+
+        
+        user1.send("Hello brian", "2");
+        user2.send("Hey buddy", "1");
 	}
 
 }
