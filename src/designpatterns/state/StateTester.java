@@ -14,6 +14,8 @@ public class StateTester  extends AbstractTester implements TesterInterface{
 				+ "Permite que um objeto altere seu comportamento de acordo com o estado interno que se encontra\n"
 				+ " em um momento dado.\n";
 		System.out.println(content);
+		System.out.println("");
+		showMenu(title);
 		
 	}
 
@@ -44,8 +46,6 @@ public class StateTester  extends AbstractTester implements TesterInterface{
 	public void start() {
 		showTitle(title);
 		
-		System.out.println("");
-		showMenu(title);
 		TvContext context = new TvContext();
 		State tvStartState = new TvStartState();
 		State tvStopState = new TvStopState();
