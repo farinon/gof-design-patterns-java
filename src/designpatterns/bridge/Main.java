@@ -1,10 +1,10 @@
-package com.mateusolorenzatti;
+package designpatterns.bridge;
 
-import com.mateusolorenzatti.Abstraction.Caminhao;
-import com.mateusolorenzatti.Abstraction.Onibus;
-import com.mateusolorenzatti.Abstraction.Veiculo;
-import com.mateusolorenzatti.Implementation.Cargas;
-import com.mateusolorenzatti.Implementation.Pessoas;
+import designpatterns.bridge.abstraction.Caminhao;
+import designpatterns.bridge.abstraction.Onibus;
+import designpatterns.bridge.abstraction.Veiculo;
+import designpatterns.bridge.implementation.Cargas;
+import designpatterns.bridge.implementation.Pessoas;
 
 public class Main {
     public static void main(String[] args) {

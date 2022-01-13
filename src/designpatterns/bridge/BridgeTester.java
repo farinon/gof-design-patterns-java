@@ -1,6 +1,11 @@
 package designpatterns.bridge;
 
 import app.TesterInterface;
+import designpatterns.bridge.abstraction.Caminhao;
+import designpatterns.bridge.abstraction.Onibus;
+import designpatterns.bridge.abstraction.Veiculo;
+import designpatterns.bridge.implementation.Cargas;
+import designpatterns.bridge.implementation.Pessoas;
 import app.AbstractTester;
 
 public class BridgeTester  extends AbstractTester implements TesterInterface{
@@ -51,7 +56,18 @@ public class BridgeTester  extends AbstractTester implements TesterInterface{
 	   }
 	@Override
 	public void start() {
-		showTitle(title);	
+		showTitle(title);
+		System.out.println(" ---------------------------------------- ");
+
+        Veiculo caminhao = new Caminhao("Scania", new Cargas());
+        caminhao.realizarAtividade();
+
+        System.out.println(" ---------------------------------------- ");
+
+        Veiculo onibus = new Onibus("Mercedes", new Pessoas());
+        onibus.realizarAtividade();
+
+        System.out.println(" ---------------------------------------- ");
 	}
 
 }
